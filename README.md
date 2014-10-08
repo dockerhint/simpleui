@@ -9,7 +9,7 @@ DockerUI is a web interface to interact with the Remote API.  The goal is to pro
 Pull the latest image:  
   
 ```
-docker pull abh1nav/dockerui:latest
+docker pull builtdock/simple-ui:latest
 ```
   
 #### Step 2
@@ -17,7 +17,7 @@ If you're running Docker using a unix socket (default):
   
 ```
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock \
---name dockerui abh1nav/dockerui:latest -e="/docker.sock"
+--name dockerui builtdock/simple-ui:latest -e="/docker.sock"
 ```
   
 If you're running Docker over tcp:  
