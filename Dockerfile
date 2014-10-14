@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM phusion/baseimage:0.9.15
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     ca-certificates \
